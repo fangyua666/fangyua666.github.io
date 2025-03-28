@@ -119,6 +119,54 @@ section.visible {
     gap: 1.5rem;
 }
 
+/* Research Section */
+.research-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.research-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-left: 3px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.research-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.research-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.research-date {
+    color: var(--secondary-color);
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.research-advisor {
+    margin-bottom: 1rem;
+}
+
+.research-description {
+    margin-bottom: 1rem;
+}
+
+.research-item ul {
+    margin-left: 1.5rem;
+}
+
+.research-item li {
+    margin-bottom: 0.5rem;
+}
+
 /* Projects Section */
 .projects-grid {
     display: grid;
