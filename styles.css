@@ -129,11 +129,12 @@ section.visible {
 .research-item {
     display: flex;
     background-color: var(--dark-bg);
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
     transition: var(--transition);
     color: white;
+    margin-bottom: 3rem;
 }
 
 .research-item:hover {
@@ -143,17 +144,17 @@ section.visible {
 
 .research-image {
     flex: 1;
-    width: 480px;
-    height: 360px;
+    width: 550px;
+    height: 420px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
     background-color: white;
-    margin: 1.5rem;
+    margin: 2rem;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 .research-image img {
@@ -161,53 +162,56 @@ section.visible {
     height: 100%;
     object-fit: contain;
     transition: var(--transition);
+    padding: 10px;
 }
 
 .research-content {
     flex: 1.5;
-    padding: 2.5rem 3rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .research-item h3 {
     color: white;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 0.5rem;
-    line-height: 1.3;
+    line-height: 1.25;
     font-weight: 600;
 }
 
 .research-subtitle {
     color: #e0e0e0;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
     font-weight: 400;
     font-style: italic;
 }
 
 .research-authors {
     color: var(--accent-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     font-style: italic;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
 }
 
 .research-description {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     line-height: 1.8;
-    font-size: 1rem;
+    font-size: 1.05rem;
 }
 
 .research-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     margin-top: auto;
 }
 
 .research-link {
     display: inline-block;
-    padding: 0.7rem 2.5rem;
+    padding: 0.8rem 3rem;
     background-color: transparent;
     color: white;
     border: 2px solid var(--accent-color);
@@ -215,15 +219,16 @@ section.visible {
     text-decoration: none;
     transition: var(--transition);
     font-weight: 600;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
     text-align: center;
+    font-size: 1.1rem;
 }
 
 .research-link:hover {
     background-color: var(--accent-color);
     color: var(--dark-bg);
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(79, 195, 247, 0.3);
+    box-shadow: 0 5px 15px rgba(79, 195, 247, 0.4);
 }
 
 @media (max-width: 768px) {
