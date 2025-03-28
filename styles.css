@@ -127,44 +127,89 @@ section.visible {
 }
 
 .research-item {
-    background-color: white;
+    display: flex;
+    background-color: var(--dark-bg);
     border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-left: 3px solid var(--primary-color);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: var(--transition);
+    color: white;
 }
 
 .research-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+.research-image {
+    flex: 1;
+    max-width: 40%;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.research-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.research-content {
+    flex: 1.5;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .research-item h3 {
-    color: var(--secondary-color);
+    color: white;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
 }
 
-.research-date {
-    color: var(--secondary-color);
+.research-authors {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
     font-style: italic;
-    margin-bottom: 0.5rem;
-}
-
-.research-advisor {
-    margin-bottom: 1rem;
 }
 
 .research-description {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
 }
 
-.research-item ul {
-    margin-left: 1.5rem;
+.research-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
 }
 
-.research-item li {
-    margin-bottom: 0.5rem;
+.research-link {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.research-link:hover {
+    background-color: var(--accent-color);
+    color: var(--dark-bg);
+}
+
+@media (max-width: 768px) {
+    .research-item {
+        flex-direction: column;
+    }
+    
+    .research-image {
+        max-width: 100%;
+        min-height: 200px;
+    }
 }
 
 /* Projects Section */
