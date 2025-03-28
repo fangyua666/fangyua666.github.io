@@ -143,18 +143,20 @@ section.visible {
 
 .research-image {
     flex: 1;
-    max-width: 45%;
-    min-height: 300px;
+    width: 500px;
+    height: 350px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 4px;
 }
 
 .research-image img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
     max-height: 100%;
     object-fit: contain;
     transition: var(--transition);
