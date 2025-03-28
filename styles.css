@@ -149,10 +149,11 @@ section.visible {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
-    background-color: white;
-    margin: 1rem;
-    border-radius: 4px;
+    padding: 1.5rem;
+    background-color: #f0f5f9;
+    margin: 1.5rem;
+    border-radius: 8px;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
 }
 
 .research-image img {
@@ -160,30 +161,35 @@ section.visible {
     max-height: 100%;
     object-fit: contain;
     transition: var(--transition);
+    border-radius: 4px;
 }
 
 .research-content {
     flex: 1.5;
-    padding: 2rem;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .research-item h3 {
     color: white;
-    font-size: 1.6rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    font-weight: 600;
 }
 
 .research-authors {
     color: var(--accent-color);
     margin-bottom: 1.5rem;
     font-style: italic;
+    font-size: 1.1rem;
 }
 
 .research-description {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     line-height: 1.8;
+    font-size: 1rem;
 }
 
 .research-links {
@@ -194,18 +200,23 @@ section.visible {
 
 .research-link {
     display: inline-block;
-    padding: 0.5rem 1.5rem;
+    padding: 0.6rem 2rem;
     background-color: transparent;
     color: white;
     border: 1px solid var(--accent-color);
     border-radius: 4px;
     text-decoration: none;
     transition: var(--transition);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
 }
 
 .research-link:hover {
     background-color: var(--accent-color);
     color: var(--dark-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
