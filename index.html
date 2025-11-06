@@ -3,171 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fang Yu</title>
-    <!-- Link to external CSS file -->
+    <title>Professional Portfolio Template</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="profile-container">
-            <img src="images/profile.jpeg" alt="Profile" class="profile-img" style="width: 200px; height: 200px;">
-            <h1 class="name">Fang Yu</h1>
-            <p class="title">Student</p>
-            <!-- <p class="school"><a href="https://www.umich.edu/" target="_blank" style="color: #166088; text-decoration: none;">University of Michigan</a></p> -->
-            
-        </div>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <!-- <li><a href="#research">Research</a></li> -->
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <main>
-        <section id="about">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>Hi there! I'm Fang, a third-year undergraduate student majoring in Mathematics and Statistics at <a href="https://www.umich.edu/" target="_blank" style="color: #166088; text-decoration: none;">University of Michigan</a>.</p>
-               
-
-                <p>As a former Data Analyst Intern at <a href="https://www.astrazeneca.com/" target="_blank" style="color: #166088; text-decoration: none;">AstraZeneca</a>, I led sales performance analytics and developed Power BI dashboards that streamlined therapy prioritization for over 30,000 healthcare institutions.</p>
-            </div>
-        </section>
-        
-        
-        
-        <section id="projects">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-category="Machine Learning">
-                    <img src="images/netflix.jpg" alt="Project 1" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Netflix Prize</h3>
-                        <p class="project-description">Built an ensemble model using Python that combined neighborhood-based methods and matrix factorization to improve movie rating predictions, enhance the performance of recommender system.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/4everXYZ/netflix-project" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                            <!-- <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a> -->
-                        </div>
-                    </div>
+    <div class="page-shell">
+        <aside class="profile-sidebar">
+            <div class="profile-card">
+                <div class="avatar-frame">
+                    <img src="images/profile.jpeg" alt="Profile" class="avatar">
                 </div>
-                
-               
-                
-                <!-- Project 3 -->
-                <!-- <div class="project-card" data-category="Machine Learning">
-                    <img src="images/project3.jpg" alt="Project 3" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Food Recipe Recommender</h3>
-                        <p class="project-description">Applied EDA on Food.com datasets and engineered features with polynomial transformation, one-hot encoding, and standard scaling, implemen</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </section>
-        <section id="experience">
-            <h2 class="section-title">Experience</h2>
-            <div class="experience-container">
-                <!-- Experience Item 1 -->
-                <div class="experience-item">
-                    <h3>Data Analyst Intern - AstraZeneca</h3>
-                    <p class="experience-date">May 2023 - Aug 2023</p>
-                    <ul>
-                        <li>Led sales analytics for 10+ therapeutic areas across 30,000+ healthcare institutions, delivering actionable monthly reports for nationwide strategies.</li>
-                        <li>Streamlined therapy prioritization with Python and Excel, accelerating strategy deployment across 10+ regions.</li>
-                        <li>Developed Power BI dashboards to visualize KPIs and resolve pricing/inventory discrepancies, achieving 97% data alignment and improved allocation for 10+ regions.</li>
-                        <li>Identified and resolved 8+ system flaws in the Potential Market module, collaborating with Deloitte to reduce report generation time by 25% for 80+ users.</li>
-                    </ul>
-                </div>
-                
-                <!-- Experience Item 2 -->
-                <!-- <div class="experience-item">
-                    <h3>Job Title - Company Name</h3>
-                    <p class="experience-date">Month Year - Month Year</p>
-                    <ul>
-                        <li>Responsibility or achievement description</li>
-                        <li>Responsibility or achievement description</li>
-                        <li>Responsibility or achievement description</li>
-                    </ul>
-                </div> -->
-            </div>
-        </section>
+                <h1 class="profile-name">Fang Yu</h1>
+                <p class="profile-role">Undergraduate @ University of Michigan</p>
+                <p class="profile-bio">Hello! I'm a full-time AI enthusiast and a part-time golfer.</p>
 
-        <section id="publications">
-            <h2 class="section-title">Publications</h2>
-            <div class="publications-container">
-                <div class="publication-item">
-                    <h3>Deep Facial Expression Recognition Using ResNet34</h3>
-                    <p class="publication-authors">Manling Zhao, <strong>Fang Yu</strong>, Yuwei Dai</p>
-                    <p class="publication-description">World Scientific Research Journal, 2020 - <a href="http://www.wsr-j.org/download/WSRJ-6-10-380-386.pdf" target="_blank" style="color: #166088; text-decoration: none;">Paper</a></p>
+                <ul class="profile-meta">
+                    <li><i class="fa-solid fa-location-dot"></i><span>Ann Arbor, USA</span></li>
+                    <li><i class="fa-solid fa-envelope"></i><a href="mailto:fangyua@umich.edu">fangyua@umich.edu</a></li>
+                    <li><i class="fa-brands fa-github"></i><a href="https://github.com/fangyua666">github.com/fangyua666</a></li>
+                    <li><i class="fa-solid fa-graduation-cap"></i><a href="https://www.linkedin.com/in/fangyu0818/">LinkedIn</a></li>
+                </ul>
+
+                <div class="profile-actions">
                     
+                    <a class="action-link" href="https://drive.google.com/file/d/1gFOpPRMlzxW1SIjnXaT6djcHA2PoFsMB/view?usp=sharing">Resume</a>
+                    <!-- <a class="action-link" href="https://drive.google.com/file/d/1OUlUX7GzZcw4CgsuN5aWNVNCoZN_bc6W/view?usp=sharing">Poster</a> -->
                 </div>
             </div>
-        </section>
+        </aside>
 
-        <section id="skills">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-container">
-                
-                
-                <div class="skill-item">PyTorch</div>
-                <div class="skill-item">TensorFlow</div>
-                <div class="skill-item">Pandas</div>
-                <div class="skill-item">Git</div>
-                <div class="skill-item">SQL</div>
-                <div class="skill-item">HTML</div>
-                <div class="skill-item">R</div>
-                <div class="skill-item">Jekyll</div>
-                <div class="skill-item">Power BI</div>
-                
-                
-                
-                
-                
-                <!-- Add more skills as needed -->
-            </div>
-        </section>
-        
+        <main class="content-area">
+            <header class="top-bar" id="top">
+                <nav class="top-nav" aria-label="Primary">
+                    <ul>
+                        <li><a href="#top">Homepage</a></li>
+                        <li><a href="#about">About</a></li>
+                        <!-- <li><a href="#papers">Papers</a></li> -->
+                        <li><a href="#education">Education</a></li>
+                        <!-- <li><a href="#honors">Honors</a></li> -->
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#internships">Internships</a></li>
+                        <!-- <li><a href="#certificates">Certificates</a></li> -->
+                        <!-- <li><a href="#contact">Contact</a></li> -->
+                    </ul>
+                </nav>
+            </header>
 
-        
-        <section id="contact">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>yuf204474@gmail.com</span>
+            <section id="about" class="section-block">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description">Hi there! This is Fang, I'm a senior at University of Michigan, majoring in Mathematics and Statistics. During my undergraduate journey, it's my honor to work with <a href="https://pages.stat.wisc.edu/~zhong35/" target="_blank" rel="noopener noreferrer">Prof. Yiqiao Zhong</a> and <a href="https://yixinwang.github.io/" target="_blank" rel="noopener noreferrer">Prof. Yixin Wang</a> regarding machine learning and LLMs.</p>
+                <p class="section-description">Now, I work as a Research Assistant at <a href="https://umich-foreseer.github.io/" target="_blank" rel="noopener noreferrer">Foreseer Group</a>. My uitlimate goal is to become a Machine Learning Engineer.</p>
+            </section>
+            <!-- 教育经历 -->
+            <section id="education" class="section-block">
+                <div class="section-heading">
+                    <h2 class="section-title">Education</h2>
+                    <span class="section-badge"><i class="fa-solid fa-book"></i> Academic</span>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Ann Arbor, MI</span>
+                <ul class="timeline-list">
+                    <li>
+                        <div class="timeline-title">University of Michigan, Ann Arbor</div>
+                        <div class="timeline-meta">B.S. in Mathematics, B.S. in Statistics · 2023 &ndash; 2025</div>
+                        <p class="timeline-description">GPA: 3.7/4.0</p>
+                        <p class="timeline-description">Honors: University Honors (2024)</p>
+                   </li>
+                   <li>
+                    <div class="timeline-title">University of California, Santa Barbara</div>
+                    <div class="timeline-meta">Major in Applied Mathematics (Transfer Out) · 2021 &ndash; 2023</div>
+                    <p class="timeline-description">GPA: 3.69/4.0</p>
+                    <p class="timeline-description">Honors: Dean's Honors (4 Quarters)</p>
+               </li>
+                </ul>
+            </section>
+             <!-- 科研经历 -->
+             <section id="research" class="section-block">
+                <div class="section-heading">
+                    <h2 class="section-title">Research Experience</h2>
+                    <span class="section-badge"><i class="fa-solid fa-flask"></i> Lab</span>
                 </div>
-                <div class="social-links">
-                    <a href="https://github.com/fangyua666" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="www.linkedin.com/in/fangyu88" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <!-- <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> -->
-                    <!-- Add more social links as needed -->
+                <ul class="timeline-list">
+                    <li>
+                        <div class="timeline-title">Research Assistant @ Foreseer Group, University of Michigan</div>
+                        <div class="timeline-meta">Prof. Qiaozhu Mei · Aug 2025 &ndash; Present</div>
+                        <p class="timeline-description">Reinforcement fine-tuning for behavioral foundation models (be.fm-8B). Model inference and evaluation on multiple behavioral benchmark tasks.</p>
+                    </li>
+                    <li>
+                        <div class="timeline-title">Research Assistant @ National University of Singapore</div>
+                        <div class="timeline-meta">Prof. Doudou Zhou · June 2025 &ndash; Oct 2025</div>
+                        <p class="timeline-description">
+                           Built a multimodal classifier combining dermatology images and patient demographics via late fusion. Applied Group-DRO re-weighting across demographic subgroups to over-sample underrepresented groups. 
+                        </p>
+                    </li>
+                    <li>
+                        <div class="timeline-title">Undergraduate Researcher @ University of Wisconsin-Madison</div>
+                        <div class="timeline-meta">Prof. Yiqiao Zhong · May 2025 &ndash; Aug 2025</div>
+                        <p class="timeline-description">
+                           Developed an interpretability tool to diagnose reasoning failures in arithmetic tasks. 
+                           Designed error attribution framework to compare failure patterns across Transformer architectures.
+                        </p>
+                    </li>
+                    <li>
+                        <div class="timeline-title">Undergraduate Researcher @ URPS, University of Michigan</div>
+                        <div class="timeline-meta">Prof. Yixin Wang · Dec 2024 &ndash; May 2025</div>
+                        <p class="timeline-description">
+                           Implemented a self-improvement framework that substantially improve the length generalization ability of LLMs on arithemetic tasks.
+                           <a href="https://drive.google.com/file/d/1OUlUX7GzZcw4CgsuN5aWNVNCoZN_bc6W/view?usp=sharing" target="_blank" rel="noopener noreferrer">Poster</a> presented at 2025 URPS and CSE Undergraduate Research Symposium. 
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <!-- 实习经历 -->
+            <section id="internships" class="section-block">
+                <div class="section-heading">
+                    <h2 class="section-title">Internships</h2>
+                    <span class="section-badge"><i class="fa-solid fa-briefcase"></i> Practice</span>
                 </div>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; <span class="current-year">2025</span> Fang Yu. All rights reserved.</p>
-    </footer>
-    
-    <!-- Link to external JavaScript file -->
+                <ul class="timeline-list">
+                    <li>
+                        <div class="timeline-title">Data Analyst @ AstraZeneca</div>
+                        <div class="timeline-meta">June 2023 &ndash; Aug 2023 · Shanghai</div>
+                        
+                        <p class="timeline-description">
+                        Collaborated with Business Intelligence team to built Power BI dashboards to visualize sales KPIs. Identified and reconciled data discrepancies between Power BI system and local databases, documenting inconsistencies and generating weekly reports.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+           
+
+            <footer class="site-footer">
+                &copy; <span class="current-year">2025</span> Fang Yu.
+            </footer>
+        </main>
+    </div>
+
+    <div class="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- 交互脚本 -->
     <script src="script.js"></script>
 </body>
 </html>
